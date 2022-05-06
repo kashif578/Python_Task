@@ -1,0 +1,41 @@
+1. convert string into list of list with first line as first element in all sublist, sublist len is 3
+	ex:    input:        in string
+				first line 
+				second line 
+				third line
+				fourth line
+				fifth line
+				
+			output:
+			    [["first line", "second line", "third line"], ["first line", "fourth line", "fifth line"]]
+				
+2. Parse below output to form dictionary where output should be like {key: []}
+    ex:     input:       in string
+	            device1   vlan1
+				device2   vlan2
+				device3   vlan1
+				device2   vlan3
+				device1   vlan4
+				device2   vlan1
+				device3   vlan6
+			
+			output: 
+			    {"device1": ["vlan1", "vlan4"], "device2": ["vlan2", "vlan1", "vlan3"], "device3": ["vlan1", "vlan6"]}
+				
+3. consider below dictionary and print necessary fields as shown below
+    ex:     input:
+				{'stream_group01': {'stream_group01-EndpointSet-1 - Flow Group 0001': {'Tx Frames': '219874', 'Rx Frames': '1978866', 'Loss %': '', 'Frames Delta': '1758992', 'Tx Frame Rate': '1000.000', 'Rx Frame Rate': '9000.000'}}, 'stream_group02': {'stream_group02-EndpointSet-1 - Flow Group 0001': {'Tx Frames': '209257', 'Rx Frames': '1255542', 'Loss %': '', 'Frames Delta': '1046285', 'Tx Frame Rate': '1000.000', 'Rx Frame Rate': '6000.000'}}}
+				
+			output:
+				Transmitted rate is 1000.00 and Received rate is 9000.00 on stream_group01-EndpointSet-1 - Flow Group 0001 of stream_group01
+				Transmitted rate is 1000.00 and Received rate is 9000.00 on stream_group01-EndpointSet-1 - Flow Group 0001 of stream_group02
+				
+4. write a class with method to take 2 possitional arguments, 2 key word arguments with one having default value of 0, args, and kwargs and print the arguments and keyword arguments passed on different conditions
+    ex: 	Considering as object created with the class written                obj = <class>
+			obj.print_func(1,2,a=4,b=5,"a", "c", 45, m="d", l=5)        output = parameters received are 1, 2
+																				 positional args are 4, 5
+																				 args are ["a", "c" 45]
+																				 kwargs are {m: "d", l=5}
+			obj.print_func(1,2,a=4,b=5,"a", "c", 45, m="d", l=5)
+			obj.print_func(1,2,a=4,"a", 45, m="d", l=5)
+				
