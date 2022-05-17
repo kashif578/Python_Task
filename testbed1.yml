@@ -1,0 +1,27 @@
+devices:
+  LEAF1:
+    connections:
+      cli:
+        ip: 131.226.217.151
+        protocol: ssh
+    credentials:
+      default:
+        password: Admin_1234!
+        username: admin
+      enable:
+        password: Admin_1234!
+    os: nxos
+    type: nxos
+  LEAF2:
+    connections:
+      cli:
+        ip: 131.226.217.152
+        protocol: ssh
+    credentials:
+      default:
+        password: Admin_1234!
+        username: admin
+      enable:
+        password: Admin_1234!
+    os: nxos
+    type: nxos  
